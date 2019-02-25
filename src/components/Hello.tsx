@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { func } from 'prop-types';
 
 export interface HelloProps{
     compiler: string;
@@ -23,3 +24,7 @@ export function paddingLeft(value: string, padding: number | string): string{
 }
 
 paddingLeft('Hello', 7);
+
+export function print(value: any): void{
+    console.log(value);
+}
