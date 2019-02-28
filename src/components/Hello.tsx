@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { func } from 'prop-types';
+import { func, number } from 'prop-types';
 
 export interface HelloProps{
     compiler: string;
@@ -27,4 +27,9 @@ paddingLeft('Hello', 7);
 
 export function print(value: any): void{
     console.log(value);
+}
+
+export interface Dog{
+    eat(food: string): void;
+    age(): number;
 }
