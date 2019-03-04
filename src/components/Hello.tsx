@@ -21,7 +21,10 @@ export function paddingLeft(value: string, padding: number | string): string{
         return padding + value;
     }
     throw new Error(`excepted string or number, got ${padding}`);
+    
 }
+
+
 
 paddingLeft('Hello', 7);
 
