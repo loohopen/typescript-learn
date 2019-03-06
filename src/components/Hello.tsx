@@ -28,6 +28,7 @@ export function paddingLeft(value: string, padding: number | string): string{
 
 paddingLeft('Hello', 7);
 
+
 export function print(value: any): void{
     console.log(value);
 }
@@ -35,4 +36,33 @@ export function print(value: any): void{
 export interface Dog{
     eat(food: string): void;
     age(): number;
+}
+
+
+export interface ShopProps{
+    name: string;
+}
+
+
+// <ShopList name="Mark" />
+export class ShopList extends React.Component<ShopProps, {}>{
+    render(){
+        return (
+            <div className="shopping-list">
+                <h1>Shopping TEST HOT LOADER List For {this.props.name}</h1>
+                <ul>
+                    <li>Instgram</li>
+                    <li>WhatsApp</li>
+                    <li>Oculus</li>
+                </ul>
+            </div>
+        )
+        // return React.createElement("div", {className: "shopping-list"},
+        //     React.createElement("h1", {}
+        //     )
+        // )
+        /* *
+        * return React.
+        */
+    }
 }
